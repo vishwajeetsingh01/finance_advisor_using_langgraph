@@ -1,37 +1,33 @@
 # Finance Advisor - Personal Finance Assistant
 
 ## Overview
-Finance Advisor is a Streamlit-based AI-powered finance assistant designed to simplify personal finance management. It enables users to track expenses, access real-time stock information via the Alpha Vantage API, view budget summaries, and receive personalized financial advice through a conversational interface. Powered by LangGraph and the Groq API, Finance Advisor maintains user context across sessions, provides empathetic and clear responses, and includes a Human-in-the-Loop (HITL) mechanism for high-risk queries.
+Finance Advisor is a Streamlit-based AI-powered finance assistant designed to simplify personal finance management. It enables users to track expenses, access real-time stock information via the Alpha Vantage API, view budget summaries, and receive personalized financial advice through a conversational interface. Powered by LangGraph and the Groq API, Finance Advisor maintains user context across sessions, provides empathetic and clear responses, and includes a Human-in-the-Loop (HITL) mechanism for high-risk queries.<br>
 
 ## Features
-* **User Profile Collection:** Gathers user details (age, income, goals, risk tolerance) for tailored responses.
-* **Real-Time Stock Data:** Fetches stock prices using Alpha Vantage API with robust symbol extraction and error handling.
-* **Intent Detection:** Classifies queries into profile updates, stock queries, expense tracking, budget summaries, or advice.
+* **User Profile Collection:** Gathers user details (age, income, goals, risk tolerance) for tailored responses.<br>
+* **Real-Time Stock Data:** Fetches stock prices using Alpha Vantage API with robust symbol extraction and error handling.<br>
+* **Intent Detection:** Classifies queries into profile updates, stock queries, expense tracking, budget summaries, or advice.<br>
 * **Memory Management:**
-    <br>Short-term memory for in-session context (e.g., previous intents).
-    <br>Long-term memory for cross-session continuity (e.g., past advice).
-
-
-* **Human-in-the-Loop (HITL):** Flags high-risk queries (e.g., "liquidate retirement account") for simulated human review.
-* **Empathetic Responses:** Uses clear, jargon-free language for users with limited financial literacy.
-- **Debugging:** Includes logging to troubleshoot API issues.
+    Short-term memory for in-session context (e.g., previous intents).<br>
+    Long-term memory for cross-session continuity (e.g., past advice).<br>
+* **Human-in-the-Loop (HITL):** Flags high-risk queries (e.g., "liquidate retirement account") for simulated human review.<br>
+* **Empathetic Responses:** Uses clear, jargon-free language for users with limited financial literacy.<br>
+* **Debugging:** Includes logging to troubleshoot API issues.<br>
 
 ## Prerequisites
-* **Python:** Version 3.8 or higher.
-* **Virtual Environment:** Recommended to isolate dependencies.
+* **Python:** Version 3.8 or higher.<br>
+* **Virtual Environment:** Recommended to isolate dependencies.<br>
 * **API Keys:**
-    <br>Groq API key (for LLM).
-    <br>Alpha Vantage API key (for stock data).
+    Groq API key (for LLM).<br>
+    Alpha Vantage API key (for stock data).<br>
 
 ## Setup Instructions
-* Clone the Repository (if applicable):
-* git clone <repository-url>
-* cd finadvise
-
-
-- Create Virtual Environment:Create a virtual environment named env4:
-- python3 -m venv env4
-
+* **Clone the Repository (if applicable):**
+    git clone <repository-url>
+    cd finadvise
+* **Create Virtual Environment:**
+    Create a virtual environment named venv:
+    python3 -m venv venv
 - Activate Virtual Environment:
 
 - On macOS/Linux:source env4/bin/activate
@@ -58,7 +54,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     -streamlit run app.py
 
 - Access the app at http://localhost:8501 in your browser.
-![alt text](image.jpg)
+![alt text](assets/image.jpg)
 
 - Deactivate Virtual Environment (when done):
     deactivate
