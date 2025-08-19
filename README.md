@@ -83,11 +83,12 @@ finance_advisor_using_langgraph/<br>
 ├── README.md               # Project overview and setup<br>
 └── requirements.txt        # Python dependencies<br>
 
-* **Notes:**<br>
+**Notes:**<br>
 * **Stock Data:** Uses Alpha Vantage API for real-time stock prices. Free tier limits to 5 calls/minute; monitor usage or upgrade for higher limits.<br>
 * **Debugging:** Check terminal logs for API response details or errors (e.g., rate limits, invalid symbols).<br>
 * **Security:** Store API keys in .env to avoid hardcoding.<br>
-* **Troubleshooting:**<br>
+
+**Troubleshooting:**<br>
     Verify API keys in .env.<br>
     Ensure internet connectivity for Alpha Vantage API.<br>
 * Upgrade pip if dependency issues arise: python -m pip install --upgrade pip.<br>
