@@ -7,7 +7,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
 * **User Profile Collection:** Gathers user details (age, income, goals, risk tolerance) for tailored responses.<br>
 * **Real-Time Stock Data:** Fetches stock prices using Alpha Vantage API with robust symbol extraction and error handling.<br>
 * **Intent Detection:** Classifies queries into profile updates, stock queries, expense tracking, budget summaries, or advice.<br>
-* **Memory Management:**
+* **Memory Management:**<br>
     Short-term memory for in-session context (e.g., previous intents).<br>
     Long-term memory for cross-session continuity (e.g., past advice).<br>
 * **Human-in-the-Loop (HITL):** Flags high-risk queries (e.g., "liquidate retirement account") for simulated human review.<br>
@@ -17,59 +17,61 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
 ## Prerequisites
 * **Python:** Version 3.8 or higher.<br>
 * **Virtual Environment:** Recommended to isolate dependencies.<br>
-* **API Keys:**
+* **API Keys:**<br>
     Groq API key (for LLM).<br>
     Alpha Vantage API key (for stock data).<br>
 
 ## Setup Instructions
-* **Clone the Repository (if applicable):**
-    git clone <repository-url>
-    cd finadvise
-* **Create Virtual Environment:**
-    Create a virtual environment named venv:
-    python3 -m venv venv
-- Activate Virtual Environment:
+* **Clone the Repository (if applicable):**<br>
+    git clone [<repository-url>](https://github.com/vishwajeetsingh01/finance_advisor_using_langgraph.git)<br>
+    cd finance_advisor_using_langgraph
+* **Create Virtual Environment:**<br>
+    Create a virtual environment named venv:<br>
+    python3 -m venv venv<br>
+* **Activate Virtual Environment:**<br>
+    On macOS/Linux:source venv/bin/activate<br>
+    On Windows:venv\Scripts\activate<br>
 
-- On macOS/Linux:source env4/bin/activate
+* **Install Dependencies:**<br>
+    Install required packages from requirements.txt.<br>
+    pip install -r requirements.txt<br>
 
-- On Windows:env4\Scripts\activate
+* Contents of requirements.txt<br>
+    streamlit>=1.30.0<br>
+    langchain>=0.1.14<br>
+    langchain_groq>=0.1.4<br>
+    langgraph>=0.0.35<br>
+    python-dotenv>=1.0.0<br>
+    requests>=2.31.0<br>
 
-- Install Dependencies:Install required packages from requirements.txt:
-    pip install -r requirements.txt
+* **Set Up Environment Variables:**<br>
+    Create a .env file in the project root with your API keys.<br>
+    GROQ_API_KEY=<your-groq-api-key><br>
+    ALPHA_VANTAGE_API_KEY=<your-alpha-vantage-api-key><br>
 
-- Contents of requirements.txt:
-    streamlit>=1.30.0
-    langchain>=0.1.14
-    langchain_groq>=0.1.4
-    langgraph>=0.0.35
-    python-dotenv>=1.0.0
-    requests>=2.31.0
+* **Run the Application:**<br>
+    Start the Streamlit app.<br>
+    streamlit run app.py<br>
 
-- Set Up Environment Variables: Create a .env file in the project root with your API keys:
-    GROQ_API_KEY=<your-groq-api-key>
-    ALPHA_VANTAGE_API_KEY=<your-alpha-vantage-api-key>
-
-
-- Run the Application:Start the Streamlit app:
-    -streamlit run app.py
-
-- Access the app at http://localhost:8501 in your browser.
+* Access the app at http://localhost:8501 in your browser.<br.>
 ![alt text](assets/image.jpg)
 
-- Deactivate Virtual Environment (when done):
+* Deactivate Virtual Environment (when done).
     deactivate
 
 ## Usage
-- Interface: Use the chat-based UI to:
-    Check stock prices (e.g., "What’s the price of AAPL stock?").
-    Track expenses (e.g., "Add $50 for groceries").
-    Request budget summaries (e.g., "Show my budget").
-    Seek financial advice (e.g., "How should I save for a house?").
-    Share profile details (e.g., "I’m 30 and earn $50,000").
+* **Interface:** <br>
+    Use the chat-based UI to:<br>
+    Check stock prices (e.g., "What’s the price of AAPL stock?").<br>
+    Track expenses (e.g., "Add $50 for groceries").<br>
+    Request budget summaries (e.g., "Show my budget").<br>
+    Seek financial advice (e.g., "How should I save for a house?").<br>
+    Share profile details (e.g., "I’m 30 and earn $50,000").<br>
 
-- Example Prompt:What’s a good budget plan for someone my age who earns $50,000 a year and wants to save for a car?
-
-- High-Risk Queries: Queries like "Should I liquidate my retirement account?" trigger a simulated HITL response.
+* **Example Prompt:**<br>
+What’s a good budget plan for someone my age who earns $50,000 a year and wants to save for a car?<br>
+* **High-Risk Queries:**<br>
+Queries like "Should I liquidate my retirement account?" trigger a simulated HITL response.<br>
 
 ## Project Structure
 finadvise/
