@@ -54,10 +54,6 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     GROQ_API_KEY=<your-groq-api-key>
     ALPHA_VANTAGE_API_KEY=<your-alpha-vantage-api-key>
 
-- Example:
-    GROQ_API_KEY=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
-    ALPHA_VANTAGE_API_KEY=IG8T2GKRGV3DQSQ0
-
 
 - Run the Application:Start the Streamlit app:
     -streamlit run app.py
