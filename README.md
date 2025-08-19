@@ -78,11 +78,10 @@ Queries like "Should I liquidate my retirement account?" trigger a simulated HIT
 finance_advisor_using_langgraph/<br>
 ├── venv/                   # Virtual environment directory<br>
 ├── .env                    # Environment variables (API keys)<br>
+├── .gitignore              # Excludes venv/, .env<br>
 ├── app.py                  # Main Streamlit application<br>
-├── requirements.txt        # Python dependencies<br>
 ├── README.md               # Project overview and setup<br>
-├── FinAdvise_Documentation.md  # Detailed documentation<br>
-└── .gitignore              # Excludes venv/, .env<br>
+└── requirements.txt        # Python dependencies<br>
 
 * **Notes:**<br>
 * **Stock Data:** Uses Alpha Vantage API for real-time stock prices. Free tier limits to 5 calls/minute; monitor usage or upgrade for higher limits.<br>
