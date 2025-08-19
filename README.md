@@ -88,6 +88,6 @@ finance_advisor_using_langgraph/<br>
 * **Debugging:** Check terminal logs for API response details or errors (e.g., rate limits, invalid symbols).<br>
 * **Security:** Store API keys in .env to avoid hardcoding.<br>
 * **Troubleshooting:**<br>
-&nbsp;Verify API keys in .env.<br>
-&nbsp;Ensure internet connectivity for Alpha Vantage API.<br>
+    Verify API keys in .env.<br>
+    Ensure internet connectivity for Alpha Vantage API.<br>
 * Upgrade pip if dependency issues arise: python -m pip install --upgrade pip.<br>
