@@ -23,14 +23,14 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
 
 ## Setup Instructions
 * **Clone the Repository (if applicable):**<br>
-    git clone [<repository-url>](https://github.com/vishwajeetsingh01/finance_advisor_using_langgraph.git)<br>
+    git clone https://github.com/vishwajeetsingh01/finance_advisor_using_langgraph.git<br>
     cd finance_advisor_using_langgraph
 * **Create Virtual Environment:**<br>
-    Create a virtual environment named venv:<br>
+    Create a virtual environment named venv.<br>
     python3 -m venv venv<br>
 * **Activate Virtual Environment:**<br>
-    On macOS/Linux:source venv/bin/activate<br>
-    On Windows:venv\Scripts\activate<br>
+    On macOS/Linux: source venv/bin/activate<br>
+    On Windows: venv\Scripts\activate<br>
 
 * **Install Dependencies:**<br>
     Install required packages from requirements.txt.<br>
@@ -53,7 +53,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     Start the Streamlit app.<br>
     streamlit run app.py<br>
 
-* Access the app at http://localhost:8501 in your browser.<br.>
+* Access the app at http://localhost:8501 in your browser.<br>
 ![alt text](assets/image.jpg)
 
 * Deactivate Virtual Environment (when done).
