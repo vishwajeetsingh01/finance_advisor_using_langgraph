@@ -54,6 +54,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     streamlit run app.py<br>
 
 * Access the app at http://localhost:8501 in your browser.<br>
+
 ![alt text](assets/image.jpg)
 
 * Deactivate Virtual Environment (when done).
@@ -74,20 +75,20 @@ What’s a good budget plan for someone my age who earns $50,000 a year and want
 Queries like "Should I liquidate my retirement account?" trigger a simulated HITL response.<br>
 
 ## Project Structure
-finadvise/
-├── env4/                   # Virtual environment directory
-├── .env                    # Environment variables (API keys)
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── README.md               # Project overview and setup
-├── FinAdvise_Documentation.md  # Detailed documentation
-└── .gitignore              # Excludes env4/, .env
+finance_advisor_using_langgraph/<br>
+├── venv/                   # Virtual environment directory<br>
+├── .env                    # Environment variables (API keys)<br>
+├── app.py                  # Main Streamlit application<br>
+├── requirements.txt        # Python dependencies<br>
+├── README.md               # Project overview and setup<br>
+├── FinAdvise_Documentation.md  # Detailed documentation<br>
+└── .gitignore              # Excludes venv/, .env<br>
 
-- Notes:
-- Stock Data: Uses Alpha Vantage API for real-time stock prices. Free tier limits to 5 calls/minute; monitor usage or upgrade for higher limits.
-- Debugging: Check terminal logs for API response details or errors (e.g., rate limits, invalid symbols).
-- Security: Store API keys in .env to avoid hardcoding.
-- Troubleshooting:
-    Verify API keys in .env.
-    Ensure internet connectivity for Alpha Vantage API.
-- Upgrade pip if dependency issues arise: python -m pip install --upgrade pip.
+* **Notes:**<br>
+* **Stock Data:** Uses Alpha Vantage API for real-time stock prices. Free tier limits to 5 calls/minute; monitor usage or upgrade for higher limits.<br>
+* **Debugging:** Check terminal logs for API response details or errors (e.g., rate limits, invalid symbols).<br>
+* **Security:** Store API keys in .env to avoid hardcoding.<br>
+* **Troubleshooting:**
+    Verify API keys in .env.<br>
+    Ensure internet connectivity for Alpha Vantage API.<br>
+* Upgrade pip if dependency issues arise: python -m pip install --upgrade pip.<br>
