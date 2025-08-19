@@ -5,24 +5,24 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
 
 
 ## Features
-- User Profile Collection: Gathers user details (age, income, goals, risk tolerance) for tailored responses.
-- Real-Time Stock Data: Fetches stock prices using Alpha Vantage API with robust symbol extraction and error handling.
-- Intent Detection: Classifies queries into profile updates, stock queries, expense tracking, budget summaries, or advice.
-- Memory Management:
-    Short-term memory for in-session context (e.g., previous intents).
-    Long-term memory for cross-session continuity (e.g., past advice).
+- **User Profile Collection:** Gathers user details (age, income, goals, risk tolerance) for tailored responses.
+- **Real-Time Stock Data:** Fetches stock prices using Alpha Vantage API with robust symbol extraction and error handling.
+- **Intent Detection:** Classifies queries into profile updates, stock queries, expense tracking, budget summaries, or advice.
+- **Memory Management:**
+    <br>Short-term memory for in-session context (e.g., previous intents).
+    <br>Long-term memory for cross-session continuity (e.g., past advice).
 
 
-- Human-in-the-Loop (HITL): Flags high-risk queries (e.g., "liquidate retirement account") for simulated human review.
-- Empathetic Responses: Uses clear, jargon-free language for users with limited financial literacy.
-- Debugging: Includes logging to troubleshoot API issues.
+- **Human-in-the-Loop (HITL):** Flags high-risk queries (e.g., "liquidate retirement account") for simulated human review.
+- **Empathetic Responses:** Uses clear, jargon-free language for users with limited financial literacy.
+- **Debugging:** Includes logging to troubleshoot API issues.
 
 ## Prerequisites
-- Python: Version 3.8 or higher.
-- Virtual Environment: Recommended to isolate dependencies.
-- API Keys:
-    Groq API key (for LLM).
-    Alpha Vantage API key (for stock data).
+**- Python:** Version 3.8 or higher.
+**- Virtual Environment:** Recommended to isolate dependencies.
+**- API Keys:**
+    <br>Groq API key (for LLM).
+    <br>Alpha Vantage API key (for stock data).
 
 ## Setup Instructions
 - Clone the Repository (if applicable):
@@ -50,7 +50,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     python-dotenv>=1.0.0
     requests>=2.31.0
 
-- Set Up Environment Variables:Create a .env file in the project root with your API keys:
+- Set Up Environment Variables: Create a .env file in the project root with your API keys:
     GROQ_API_KEY=<your-groq-api-key>
     ALPHA_VANTAGE_API_KEY=<your-alpha-vantage-api-key>
 
@@ -59,7 +59,7 @@ Finance Advisor is a Streamlit-based AI-powered finance assistant designed to si
     -streamlit run app.py
 
 - Access the app at http://localhost:8501 in your browser.
-    ![alt text](image.jpg)
+![alt text](image.jpg)
 
 - Deactivate Virtual Environment (when done):
     deactivate
